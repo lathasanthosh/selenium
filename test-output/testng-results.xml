@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-10T16:17:31 IST" name="Suite" finished-at="2022-10-10T16:17:31 IST" duration-ms="710">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerCucumber.runner@fa36558]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-10-10T16:17:31 IST" name="Test" finished-at="2022-10-10T16:17:31 IST" duration-ms="710">
+      <class name="runnerCucumber.runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerCucumber.runner@fa36558]" started-at="2022-10-10T16:17:31 IST" name="setUpClass" finished-at="2022-10-10T16:17:31 IST" duration-ms="294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4d5b6aac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerCucumber.runner@fa36558]" started-at="2022-10-10T16:17:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-10T16:17:31 IST" duration-ms="375" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Application Login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.util.Properties.getProperty(String)" because "tutorialsninja_Base.tutorialsninja_BaseClass.prop" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "tutorialsninja_Base.tutorialsninja_BaseClass.prop" is null
+at tutorialsninja_Base.tutorialsninja_BaseClass.launchApp(tutorialsninja_BaseClass.java:49)
+at stepdefinitions.Login.open_any_browser(Login.java:25)
+at ✽.Open any Browser(file:///C:/Users/91735/eclipse-workspace/java_framework/tutorialsninja_ComFrameWork/src/test/java/features/Login.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerCucumber.runner@fa36558]" started-at="2022-10-10T16:17:31 IST" name="tearDownClass" finished-at="2022-10-10T16:17:31 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runnerCucumber.runner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
